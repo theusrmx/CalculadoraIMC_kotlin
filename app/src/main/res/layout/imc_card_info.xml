@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:text="@string/info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/style_texto_principal" />
+
+        <ImageView
+            android:id="@+id/imgPeso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfo"
+            app:srcCompat="@drawable/weight_icon"
+            style="@style/style_img" />
+
+        <TextView
+            android:id="@+id/txtPeso"
+            style="@style/style_texto_secundario"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/peso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPeso" />
+
+        <ImageView
+            android:id="@+id/imgAltura"
+            style="@style/style_img"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPeso"
+            app:srcCompat="@drawable/height_icon" />
+
+        <TextView
+            android:id="@+id/txtAltura"
+            style="@style/style_texto_secundario"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/altura"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAltura" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

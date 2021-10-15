@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azulPrincipal">#6BFFFF</color>
+    <color name="azulVariante">#1fcbcc</color>
+    <color name="verdeResultado">#388E3C</color>
+    <color name="corSecundaria">#368773</color>
+    <color name="corSecundariaVariante">#005948</color>
+</resources>
